@@ -16,12 +16,12 @@ public class Server {
 
     public static void main(String[] args) throws IOException {
 
-        ServerSocket serverSocket = new ServerSocket(SERVER_PORT);//started listen connection from port
+        ServerSocket serverSocket = new ServerSocket(SERVER_PORT);        
 
-        while (true) {//cycle is getting connection, opening thread for it and  continue listening incoming messages
-            Socket socket = serverSocket.accept();//waiting tcp connection
-            Runnable serverTask = new ServerTask(socket);//creating new Thread
-            new Thread(serverTask).start();//starting process and immediatly go back to wauting new connection
+        while (true) {                                                    //cycle is getting connection, opening thread for it and  continue listening incoming messages
+            Socket socket = serverSocket.accept();                        //waiting tcp connection
+            Runnable serverTask = new ServerTask(socket);                 
+            new Thread(serverTask).start();                               //starting process and immediatly go back to waiting new connection
         }
 
 
