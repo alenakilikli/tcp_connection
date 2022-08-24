@@ -15,6 +15,6 @@ public class Main {
     //
     //**Note**: Server should be kept alive all the time
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+      
     }
 }
