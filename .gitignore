@@ -1,7 +1,19 @@
+
 ### IntelliJ IDEA ###
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+.idea
+*.iws
+*.iml
+*.ipr
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.kotlin_module
+
 
 ### Eclipse ###
 .apt_generated
